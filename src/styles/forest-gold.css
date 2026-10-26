@@ -1,0 +1,383 @@
+/* ==========================================================================
+   HireHub Luxury Forest & Gold Theme Palette
+   ========================================================================== */
+
+/* Dark Mode Tokens & Overrides */
+.theme-dark {
+  --bg-base: #131220;
+  --bg-surface: #1A192B;
+  --bg-surface-elevated: #222137;
+  --bg-subtle: #1F1E33;
+  --bg-input: #171626;
+  --border-subtle: rgba(217, 164, 93, 0.14);
+  --border-default: rgba(217, 164, 93, 0.24);
+  --border-hover: rgba(217, 164, 93, 0.48);
+  --text-primary: #F8FAFC;
+  --text-secondary: #A5A4BF;
+  --text-muted: #72708E;
+  --accent-primary: #10B981;
+  --accent-hover: #059669;
+  --accent-light: rgba(16, 185, 129, 0.14);
+  --accent-border: rgba(16, 185, 129, 0.28);
+  --gold-primary: #D9A45D;
+  --gold-hover: #E7B875;
+  --gold-light: rgba(217, 164, 93, 0.14);
+  --gold-border: rgba(217, 164, 93, 0.32);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 6px 18px -2px rgba(0, 0, 0, 0.55), 0 2px 6px -1px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 36px -4px rgba(0, 0, 0, 0.7), 0 6px 14px -2px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 24px rgba(217, 164, 93, 0.22);
+  --glass-bg: rgba(26, 25, 43, 0.88);
+  --glass-border: rgba(217, 164, 93, 0.15);
+  --gradient-primary: linear-gradient(135deg, #D9A45D 0%, #B9813D 100%);
+  --gradient-gold: linear-gradient(135deg, #E7B875 0%, #D9A45D 100%);
+  
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+}
+
+/* Light Mode Tokens & Overrides (All Golden Accents) */
+.theme-light {
+  --bg-base: #F8FAF9;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-subtle: #F6F4EC;
+  --bg-input: #FFFFFF;
+  --border-subtle: #E8E4D8;
+  --border-default: #D8D1BF;
+  --border-hover: #B9813D;
+  --text-primary: #1C1914;
+  --text-secondary: #585145;
+  --text-muted: #8E8473;
+  --accent-primary: #B9813D;
+  --accent-hover: #9D692F;
+  --accent-light: rgba(185, 129, 61, 0.12);
+  --accent-border: rgba(185, 129, 61, 0.3);
+  --gold-primary: #B9813D;
+  --gold-hover: #9D692F;
+  --gold-light: rgba(185, 129, 61, 0.12);
+  --gold-border: rgba(185, 129, 61, 0.3);
+  --shadow-sm: 0 1px 3px 0 rgba(28, 25, 20, 0.05);
+  --shadow-md: 0 6px 16px -2px rgba(28, 25, 20, 0.08), 0 2px 6px -1px rgba(28, 25, 20, 0.04);
+  --shadow-lg: 0 16px 32px -4px rgba(28, 25, 20, 0.12), 0 6px 14px -2px rgba(28, 25, 20, 0.06);
+  --shadow-glow: 0 0 24px rgba(185, 129, 61, 0.2);
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(232, 228, 216, 0.85);
+  --gradient-primary: linear-gradient(135deg, #D49B4E 0%, #B9813D 100%);
+  --gradient-gold: linear-gradient(135deg, #D49B4E 0%, #B9813D 100%);
+  
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Dark Theme Accents
+   ========================================================================== */
+.theme-dark .brand-icon,
+.theme-dark .sidebar-brand-mark {
+  background: transparent !important;
+  color: inherit;
+  box-shadow: none !important;
+}
+
+.theme-dark .brand > span:last-child > span,
+.theme-dark .sidebar-brand-copy strong span {
+  color: var(--gold-primary);
+}
+
+.theme-dark .eyebrow,
+.theme-dark .text-link,
+.theme-dark .text-button,
+.theme-dark .button-text {
+  color: var(--gold-primary);
+}
+
+.theme-dark .eyebrow-dot {
+  background-color: var(--gold-primary);
+  box-shadow: 0 0 10px var(--gold-primary);
+}
+
+.theme-dark .button-primary {
+  background: var(--gradient-gold);
+  color: #0E1511 !important;
+  box-shadow: 0 4px 14px rgba(217, 164, 93, 0.35);
+}
+
+.theme-dark .button-primary:hover {
+  background: linear-gradient(135deg, #F0C489 0%, #E7B875 100%);
+  box-shadow: 0 6px 20px rgba(217, 164, 93, 0.5);
+  color: #0E1511 !important;
+}
+
+.theme-dark .button-secondary:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+}
+
+.theme-dark .hero-copy h1 em {
+  background: linear-gradient(135deg, #F0C489 0%, #D9A45D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-dark .home-stats strong {
+  color: var(--gold-primary);
+}
+
+.theme-dark .match-score,
+.theme-dark .tag-good {
+  background: var(--gold-light);
+  border-color: var(--gold-border);
+  color: var(--gold-primary);
+}
+
+.theme-dark .dashboard-nav-link.active {
+  background: var(--gold-light);
+  color: var(--gold-primary);
+}
+
+.theme-dark .dashboard-nav-link.active > div > svg,
+.theme-dark .dashboard-nav-link.active > svg {
+  color: var(--gold-primary);
+}
+
+.theme-dark .sidebar-count,
+.theme-dark .topbar-notifications .notification-count {
+  background: var(--gold-primary);
+  color: #0E1511;
+}
+
+.theme-dark .role-option.selected {
+  border-color: var(--gold-primary);
+  background: var(--gold-light);
+}
+
+.theme-dark .role-option.selected svg {
+  color: var(--gold-primary);
+}
+
+.theme-dark .timeline-point.complete {
+  border-color: var(--gold-primary);
+  background: var(--gold-primary);
+  box-shadow: 0 0 8px var(--gold-light);
+}
+
+.theme-dark .step-card::before {
+  background: var(--gradient-gold);
+}
+
+.theme-dark .step-card > span {
+  color: var(--gold-primary);
+}
+
+.theme-dark .field-label input:focus,
+.theme-dark .field-label select:focus,
+.theme-dark .field-label textarea:focus,
+.theme-dark .input-wrap input:focus,
+.theme-dark .select-field-trigger:focus-visible,
+.theme-dark .jobs-search:focus-within,
+.theme-dark .hero-search-field:focus-within {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px var(--gold-light);
+}
+
+.theme-dark .auth-decoration {
+  background: linear-gradient(135deg, rgba(217, 164, 93, 0.12) 0%, rgba(16, 185, 129, 0.08) 100%), var(--bg-surface);
+}
+
+.theme-dark .final-cta {
+  border-color: var(--gold-border);
+  background: linear-gradient(135deg, rgba(217, 164, 93, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%), var(--bg-surface);
+}
+
+.theme-dark .welcome-banner {
+  border-color: var(--gold-border);
+  background: linear-gradient(135deg, rgba(217, 164, 93, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%), var(--bg-surface);
+}
+
+.theme-dark .dashboard-panel {
+  background: #1A192B;
+  border: 1px solid rgba(217, 164, 93, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.theme-dark .recommended-job {
+  background: #222137;
+  border: 1.5px solid rgba(217, 164, 93, 0.28);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.theme-dark .recommended-job:hover {
+  border-color: var(--gold-primary);
+  background: #2A2844;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 16px rgba(217, 164, 93, 0.2);
+}
+
+.theme-dark .job-card {
+  background: #222137;
+  border: 1.5px solid rgba(217, 164, 93, 0.28);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.theme-dark .job-card:hover {
+  border-color: var(--gold-primary);
+  background: #2A2844;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6), 0 0 20px rgba(217, 164, 93, 0.25);
+}
+
+/* ==========================================================================
+   Light Theme Golden Accents (Replacing all green with warm rich gold)
+   ========================================================================== */
+.theme-light .brand-icon,
+.theme-light .sidebar-brand-mark {
+  background: transparent !important;
+  color: inherit;
+  box-shadow: none !important;
+}
+
+.theme-light .brand > span:last-child > span,
+.theme-light .sidebar-brand-copy strong span {
+  color: var(--gold-primary);
+}
+
+.theme-light .eyebrow,
+.theme-light .text-link,
+.theme-light .text-button,
+.theme-light .button-text {
+  color: var(--gold-primary);
+}
+
+.theme-light .eyebrow-dot {
+  background-color: var(--gold-primary);
+  box-shadow: 0 0 10px var(--gold-primary);
+}
+
+.theme-light .button-primary {
+  background: var(--gradient-gold);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(185, 129, 61, 0.3);
+}
+
+.theme-light .button-primary:hover {
+  background: linear-gradient(135deg, #E0A75E 0%, #C0853E 100%);
+  box-shadow: 0 6px 20px rgba(185, 129, 61, 0.45);
+  color: #FFFFFF !important;
+}
+
+.theme-light .button-secondary:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+}
+
+.theme-light .hero-copy h1 em {
+  background: linear-gradient(135deg, #D49B4E 0%, #B9813D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-light .home-stats strong {
+  color: var(--gold-primary);
+}
+
+.theme-light .match-score,
+.theme-light .tag-good,
+.theme-light .status-offer,
+.theme-light .status-interview {
+  background: var(--gold-light);
+  border-color: var(--gold-border);
+  color: var(--gold-primary);
+}
+
+.theme-light .dashboard-nav-link.active {
+  background: var(--gold-light);
+  color: var(--gold-primary);
+}
+
+.theme-light .dashboard-nav-link.active > div > svg,
+.theme-light .dashboard-nav-link.active > svg {
+  color: var(--gold-primary);
+}
+
+.theme-light .sidebar-count,
+.theme-light .topbar-notifications .notification-count {
+  background: var(--gold-primary);
+  color: #FFFFFF;
+}
+
+.theme-light .role-option.selected {
+  border-color: var(--gold-primary);
+  background: var(--gold-light);
+}
+
+.theme-light .role-option.selected svg {
+  color: var(--gold-primary);
+}
+
+.theme-light .timeline-point.complete {
+  border-color: var(--gold-primary);
+  background: var(--gold-primary);
+  box-shadow: 0 0 8px var(--gold-light);
+}
+
+.theme-light .step-card::before {
+  background: var(--gradient-gold);
+}
+
+.theme-light .step-card > span {
+  color: var(--gold-primary);
+}
+
+.theme-light .field-label input:focus,
+.theme-light .field-label select:focus,
+.theme-light .field-label textarea:focus,
+.theme-light .input-wrap input:focus,
+.theme-light .select-field-trigger:focus-visible,
+.theme-light .jobs-search:focus-within,
+.theme-light .hero-search-field:focus-within {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px var(--gold-light);
+}
+
+.theme-light .skill-gap-icon,
+.theme-light .skill-gap-card a,
+.theme-light .upskill-intro > svg,
+.theme-light .stat-icon,
+.theme-light .candidate-count svg,
+.theme-light .profile-reminder a {
+  color: var(--gold-primary);
+}
+
+.theme-light .upskill-intro {
+  border-left-color: var(--gold-primary);
+}
+
+.theme-light .suggested-skill-list span small {
+  background: var(--gold-light);
+  color: var(--gold-primary);
+}
+
+.theme-light .recommended-details {
+  background: var(--gradient-gold);
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 8px rgba(185, 129, 61, 0.25);
+}
+
+.theme-light .recommended-job:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 0 8px 22px rgba(185, 129, 61, 0.18);
+}
+
+.theme-light .job-card:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 0 10px 24px rgba(185, 129, 61, 0.18);
+}
+
+.theme-light .auth-decoration {
+  background: linear-gradient(135deg, rgba(185, 129, 61, 0.12) 0%, rgba(212, 155, 78, 0.08) 100%), var(--bg-surface);
+}
+
+.theme-light .final-cta,
+.theme-light .welcome-banner {
+  border-color: var(--gold-border);
+  background: linear-gradient(135deg, rgba(185, 129, 61, 0.1) 0%, rgba(212, 155, 78, 0.05) 100%), var(--bg-surface);
+}
